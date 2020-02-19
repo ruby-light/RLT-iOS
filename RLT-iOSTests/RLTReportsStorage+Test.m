@@ -1,0 +1,18 @@
+//
+// Created by Alexey Chirkov on 06/02/2020.
+// Copyright (c) 2020 Rubylight. All rights reserved.
+//
+
+#import "RLTReportsStorage+Test.h"
+
+@implementation RLTReportsStorage (Test)
+
+@dynamic databaseOperationQueue;
+
+- (void)waitUntilAllOperationsAreFinished {
+    dispatch_sync(self.databaseOperationQueue, ^{
+
+    });
+}
+
+@end

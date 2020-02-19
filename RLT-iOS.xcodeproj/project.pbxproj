@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66B95E3D23FADE750067BEF5 /* RLT_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B95E3323FADE750067BEF5 /* RLT_iOS.framework */; };
+		66B95E4423FADE760067BEF5 /* RLT_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B95E3623FADE750067BEF5 /* RLT_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC02196F6283B0697B203 /* RLTIO.h in Headers */ = {isa = PBXBuildFile; fileRef = A42ACFC7CD6C11906F192F04 /* RLTIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC05D3A67C564F740A0DA /* RLTClient.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC4F56A923C390FEDD9BB /* RLTClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC061EC1ECA2A67B6BD16 /* RLTDevicePropertyCacheSupplier.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACEA50C2F7B1B141EDBFF /* RLTDevicePropertyCacheSupplier.m */; };
+		A42AC08167E1C63B4CA1EFF3 /* rlt_formats.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC4FE653289C2ACF7FDB7 /* rlt_formats.m */; };
+		A42AC089B0EF3653772970CC /* rlt_userProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC54AF4FF22CEF3478257 /* rlt_userProperties.m */; };
+		A42AC0BD839E9A016D90AE04 /* RLTClientWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC628BEFFD207EFDF87DE /* RLTClientWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC0F2CB96B83151B147DD /* RLTDevicePropertyFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = A42ACF9C085308C0D8EC9497 /* RLTDevicePropertyFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC11581FCA05F4FE28EF3 /* RLTLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A42ACDBC99F08F396329E30E /* RLTLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC1F388903078C0B71894 /* rlt_deflate.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACD0FE8C9BBED800533E8 /* rlt_deflate.m */; };
+		A42AC240CF81D9BDBA7201A3 /* RLTSessionTrackerSessionBackgroundState.h in Headers */ = {isa = PBXBuildFile; fileRef = A42ACCDF73CBDE5CC6E8D05B /* RLTSessionTrackerSessionBackgroundState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC2694BBB73CBB7F13B3B /* RLT.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC84E9E3159F205B23139 /* RLT.m */; };
+		A42AC2C74FD16EEBB1E85CF6 /* RLTLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC82779FBF418483C8647 /* RLTLogger.m */; };
+		A42AC2CD244168EECC9CC296 /* RLTSQLiteUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACF614EF23EFAA7BF92F7 /* RLTSQLiteUtils.m */; };
+		A42AC2DEA69A4FF080F95A6D /* RLTUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC70B2FA6B56DEDF79D8A /* RLTUtils.m */; };
+		A42AC2F1E2ABA646AB8BA569 /* NSString+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACB3CE94CADFC96854531 /* NSString+Test.m */; };
+		A42AC3479CBCBCE0CE8C3FFA /* RLTSessionTrackerBackgroundState.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC924CEB3A2727C6FC107 /* RLTSessionTrackerBackgroundState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC3492CAE0E92850F7736 /* rlt_eventProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACD25DB854710982761F0 /* rlt_eventProperties.m */; };
+		A42AC4433486D39B28D2AF4C /* RLTSessionTrackerSessionBackgroundState.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACED7A0D0BC2DABCEB73E /* RLTSessionTrackerSessionBackgroundState.m */; };
+		A42AC455D9CE303945702DCB /* RLTDevicePropertyConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC68177D4E92F75070680 /* RLTDevicePropertyConfig.m */; };
+		A42AC526C1F590C4003D1A37 /* RLTSessionTrackerState.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC9739ED243D8326A9240 /* RLTSessionTrackerState.m */; };
+		A42AC529F3C8CB0106750D05 /* RLTUserPropertyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC027CF5237B1996CC4B6 /* RLTUserPropertyValue.m */; };
+		A42AC55D7DCB60F887AB3F53 /* RLTReportsStorage+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC671A8AB12F11D87E786 /* RLTReportsStorage+Test.m */; };
+		A42AC56A0E1433360DC12B44 /* RLTDeflate.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACD4BF4D5B32158537A2F /* RLTDeflate.m */; };
+		A42AC5A4D7B854FD88F2CC78 /* RLTFormats.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC024E472AF74373C97A8 /* RLTFormats.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC5AE63F3B33993E682DD /* RLT.h in Headers */ = {isa = PBXBuildFile; fileRef = A42ACA6B4D858C5E1E4A0654 /* RLT.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC5C44889B4C7E7AC99BA /* RLTReport.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC07BC3FBC79CD346C324 /* RLTReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC60CC0EAD26335653CC4 /* RLTDevicePropertyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACACA85A971A15A20A3FA /* RLTDevicePropertyFactory.m */; };
+		A42AC628461AF94C9F1FEB21 /* RLTUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC8D467F5CF8844BD63A6 /* RLTUploader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC641E62EADC5CAF5F1B4 /* rlt_configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACF739234D73640E1968E /* rlt_configuration.m */; };
+		A42AC645CF65A9AE229AC2F1 /* RLTBaseProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = A42ACD2405971FEDC7087BEF /* RLTBaseProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC66802EFE1A822A40E54 /* RLTClientWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACF71DB8B7A54ADA507C7 /* RLTClientWrapper.m */; };
+		A42AC6898A7F90D707812FBE /* rlt_test_formats.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC2A70C94D8038F77ABA6 /* rlt_test_formats.m */; };
+		A42AC6BDACB5E5EC62BD775E /* RLTDevicePropertySupplier.h in Headers */ = {isa = PBXBuildFile; fileRef = A42ACA4B00EAF7AAD7125411 /* RLTDevicePropertySupplier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC6C24FC2E2F36F383238 /* RLTUserProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC097014DC1E43C55C95E /* RLTUserProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC770D8D83BF740FAA3E7 /* RLTClientImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC4223B558AA128992B07 /* RLTClientImpl.m */; };
+		A42AC784528A865BBB39FFE2 /* RLTSessionTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC72CE93CE9B8A361592C /* RLTSessionTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC78DC889066AF0B055B7 /* rlt_client.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC142D77F26E4472037EC /* rlt_client.m */; };
+		A42AC7C4D656309D7EA8A19C /* RLTEventProperties+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC0F76206D9F953E56509 /* RLTEventProperties+Test.m */; };
+		A42AC7D3F652EDAB768CA097 /* RLTSessionTrackerSessionForegroundState.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACA80D65A789FEA86FEFB /* RLTSessionTrackerSessionForegroundState.m */; };
+		A42AC822E3CA99EFDB67E2CF /* RLTSessionTrackerState.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC8F819BB07EDCD163C28 /* RLTSessionTrackerState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC862164BA941D2DCFDF4 /* RLTClientImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = A42ACA9D0A3ED25642677F9D /* RLTClientImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC8BABC8343C4F5B629A6 /* rlt_devicePropertyConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC71D76513E875D5BC67E /* rlt_devicePropertyConfig.m */; };
+		A42AC96F8C7408437F714B94 /* RLTBaseProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC783F95BF5E04F7E5307 /* RLTBaseProperties.m */; };
+		A42AC9803BE1B4CD41B8AA6C /* RLTDeflate.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC0FC2D85C2CF16B83F93 /* RLTDeflate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42AC998557A86CC26C69170 /* rlt_reportsStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACD2BB2089F3D4B6A742C /* rlt_reportsStorage.m */; };
+		A42AC9E8405A59892771204D /* RLTUserPropertyValue.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC906E6CA452A6861D044 /* RLTUserPropertyValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42ACA0D356FEE18522CABA6 /* RLTConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACC0D8764363437694E1C /* RLTConfiguration.m */; };
+		A42ACA1DF1234E62690492EF /* RLTUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC6AE50D480D33FC17F82 /* RLTUploader.m */; };
+		A42ACA73774E25877B8CF47F /* RLTIdentifyStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC5EE3D1B9B85582D5E5A /* RLTIdentifyStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42ACA756E57B14B36386F15 /* RLTEventProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC477DC7A09C78D4EE797 /* RLTEventProperties.m */; };
+		A42ACA7B02FDB735674CA244 /* rlt_identifyStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC48DBAF0ED37A925493D /* rlt_identifyStorage.m */; };
+		A42ACA8A632ACEE4F6A51FE5 /* RLTSessionTrackerListener.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC19CAD5A4EE24B03F6DB /* RLTSessionTrackerListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42ACAD8842D8FD49B18DCEF /* RLTSessionTrackerListener.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACB1992D1B51B544E605E /* RLTSessionTrackerListener.m */; };
+		A42ACB4180BB145E9E34681F /* RLTSessionTrackerSessionForegroundState.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC585077872CA01C66078 /* RLTSessionTrackerSessionForegroundState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42ACB7A84C2DF0DE3B34D46 /* RLTUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC09F20C7C3843F7DACFB /* RLTUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42ACBABF5596D1FD4F78F2D /* RLTSessionTrackerBackgroundState.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACEA37E42ABE825D71AB1 /* RLTSessionTrackerBackgroundState.m */; };
+		A42ACBAC7ED7CB2AD5961F68 /* RLTSessionTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACDC5CE42094614F7E23E /* RLTSessionTracker.m */; };
+		A42ACBD25A00307D308C9055 /* RLTSQLiteUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC8A7EB19021E8382DA66 /* RLTSQLiteUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42ACBF5592A3901721EC6EB /* RLTIO.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC0292EF2D19D6F74B571 /* RLTIO.m */; };
+		A42ACC2193A4A9D2E00E5DBC /* RLTIdentifyStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC0DBBB88D66166123943 /* RLTIdentifyStorage.m */; };
+		A42ACC2A1FA21C277EF916F3 /* RLTConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = A42ACB664DF57199F6D05A16 /* RLTConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42ACC6313ECC972E40C10C7 /* RLTFormats+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACB092A6258266EE31B7F /* RLTFormats+Test.m */; };
+		A42ACD1EC0132DB4F18DC417 /* RLTReportsStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC98555C8015379C91D33 /* RLTReportsStorage.m */; };
+		A42ACDE506909C8585D352E7 /* RLTInitConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = A42ACF64764CE98177D6BDA3 /* RLTInitConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42ACE14EC0690212D33B9CE /* RLTReportsStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC395F1160C4CCE3B9BEC /* RLTReportsStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42ACE1BC775E3ADDB7BA684 /* RLTDevicePropertyConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC53A8579615C152DC474 /* RLTDevicePropertyConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42ACE4891D672A2BD300BA7 /* RLTClientImpl+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC3166620E3928B41DED0 /* RLTClientImpl+Tests.m */; };
+		A42ACE6F8C5EED2F6B55FA14 /* RLTEventProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = A42ACB490D17A67CE270F03B /* RLTEventProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42ACEAEF8099E3C011988CA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A42AC33304E1939D18876EB9 /* LICENSE */; };
+		A42ACEC695CED4332649E047 /* RLTDevicePropertyCacheSupplier.h in Headers */ = {isa = PBXBuildFile; fileRef = A42ACAEC6CA4479F16D3C4A2 /* RLTDevicePropertyCacheSupplier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A42ACF0B16BBE059132D70CC /* RLTReport.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACE4D876375F12615B10E /* RLTReport.m */; };
+		A42ACF2BA3301A6FDC3B0F46 /* RLTInitConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC686E4FC5AE8EE201052 /* RLTInitConfig.m */; };
+		A42ACF7118734910E15657AD /* RLTUserProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACDF2104FDDAC27C38981 /* RLTUserProperties.m */; };
+		A42ACF76AB414CBCA514BDB3 /* RLTDevicePropertySupplier.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC9EBEB80B0D232D08209 /* RLTDevicePropertySupplier.m */; };
+		A42ACFF9D349CDD0D8B0F51F /* RLTFormats.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC53129C2AB27546CFAB3 /* RLTFormats.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66B95E3E23FADE750067BEF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66B95E2A23FADE750067BEF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66B95E3223FADE750067BEF5;
+			remoteInfo = "RLT-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		66B95E3323FADE750067BEF5 /* RLT_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RLT_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66B95E3623FADE750067BEF5 /* RLT_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLT_iOS.h; sourceTree = "<group>"; };
+		66B95E3723FADE750067BEF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66B95E3C23FADE750067BEF5 /* RLT-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RLT-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66B95E4323FADE760067BEF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42AC024E472AF74373C97A8 /* RLTFormats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTFormats.h; sourceTree = "<group>"; };
+		A42AC027CF5237B1996CC4B6 /* RLTUserPropertyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTUserPropertyValue.m; sourceTree = "<group>"; };
+		A42AC0292EF2D19D6F74B571 /* RLTIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTIO.m; sourceTree = "<group>"; };
+		A42AC07BC3FBC79CD346C324 /* RLTReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTReport.h; sourceTree = "<group>"; };
+		A42AC097014DC1E43C55C95E /* RLTUserProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTUserProperties.h; sourceTree = "<group>"; };
+		A42AC09F20C7C3843F7DACFB /* RLTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTUtils.h; sourceTree = "<group>"; };
+		A42AC0B1A29BDC5AB756B154 /* RLTEventProperties+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLTEventProperties+Test.h"; sourceTree = "<group>"; };
+		A42AC0DBBB88D66166123943 /* RLTIdentifyStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTIdentifyStorage.m; sourceTree = "<group>"; };
+		A42AC0F76206D9F953E56509 /* RLTEventProperties+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLTEventProperties+Test.m"; sourceTree = "<group>"; };
+		A42AC0FC2D85C2CF16B83F93 /* RLTDeflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTDeflate.h; sourceTree = "<group>"; };
+		A42AC142D77F26E4472037EC /* rlt_client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rlt_client.m; sourceTree = "<group>"; };
+		A42AC19CAD5A4EE24B03F6DB /* RLTSessionTrackerListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTSessionTrackerListener.h; sourceTree = "<group>"; };
+		A42AC282E0A0FC060185AA4A /* RLTClientImpl+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLTClientImpl+Tests.h"; sourceTree = "<group>"; };
+		A42AC2A70C94D8038F77ABA6 /* rlt_test_formats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rlt_test_formats.m; sourceTree = "<group>"; };
+		A42AC3166620E3928B41DED0 /* RLTClientImpl+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLTClientImpl+Tests.m"; sourceTree = "<group>"; };
+		A42AC33304E1939D18876EB9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A42AC395F1160C4CCE3B9BEC /* RLTReportsStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTReportsStorage.h; sourceTree = "<group>"; };
+		A42AC4223B558AA128992B07 /* RLTClientImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTClientImpl.m; sourceTree = "<group>"; };
+		A42AC477DC7A09C78D4EE797 /* RLTEventProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTEventProperties.m; sourceTree = "<group>"; };
+		A42AC48DBAF0ED37A925493D /* rlt_identifyStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rlt_identifyStorage.m; sourceTree = "<group>"; };
+		A42AC4A2D14D8D1A8AF5B214 /* RLTReportsStorage+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLTReportsStorage+Test.h"; sourceTree = "<group>"; };
+		A42AC4F56A923C390FEDD9BB /* RLTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTClient.h; sourceTree = "<group>"; };
+		A42AC4FE653289C2ACF7FDB7 /* rlt_formats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rlt_formats.m; sourceTree = "<group>"; };
+		A42AC53129C2AB27546CFAB3 /* RLTFormats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTFormats.m; sourceTree = "<group>"; };
+		A42AC53A8579615C152DC474 /* RLTDevicePropertyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTDevicePropertyConfig.h; sourceTree = "<group>"; };
+		A42AC54AF4FF22CEF3478257 /* rlt_userProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rlt_userProperties.m; sourceTree = "<group>"; };
+		A42AC56EA57537D6B91C64C4 /* NSString+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Test.h"; sourceTree = "<group>"; };
+		A42AC585077872CA01C66078 /* RLTSessionTrackerSessionForegroundState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTSessionTrackerSessionForegroundState.h; sourceTree = "<group>"; };
+		A42AC5EE3D1B9B85582D5E5A /* RLTIdentifyStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTIdentifyStorage.h; sourceTree = "<group>"; };
+		A42AC628BEFFD207EFDF87DE /* RLTClientWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTClientWrapper.h; sourceTree = "<group>"; };
+		A42AC671A8AB12F11D87E786 /* RLTReportsStorage+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLTReportsStorage+Test.m"; sourceTree = "<group>"; };
+		A42AC68177D4E92F75070680 /* RLTDevicePropertyConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTDevicePropertyConfig.m; sourceTree = "<group>"; };
+		A42AC686E4FC5AE8EE201052 /* RLTInitConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTInitConfig.m; sourceTree = "<group>"; };
+		A42AC6AE50D480D33FC17F82 /* RLTUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTUploader.m; sourceTree = "<group>"; };
+		A42AC70B2FA6B56DEDF79D8A /* RLTUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTUtils.m; sourceTree = "<group>"; };
+		A42AC71D76513E875D5BC67E /* rlt_devicePropertyConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rlt_devicePropertyConfig.m; sourceTree = "<group>"; };
+		A42AC72CE93CE9B8A361592C /* RLTSessionTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTSessionTracker.h; sourceTree = "<group>"; };
+		A42AC783F95BF5E04F7E5307 /* RLTBaseProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTBaseProperties.m; sourceTree = "<group>"; };
+		A42AC82779FBF418483C8647 /* RLTLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTLogger.m; sourceTree = "<group>"; };
+		A42AC84E9E3159F205B23139 /* RLT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLT.m; sourceTree = "<group>"; };
+		A42AC8A7EB19021E8382DA66 /* RLTSQLiteUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTSQLiteUtils.h; sourceTree = "<group>"; };
+		A42AC8D467F5CF8844BD63A6 /* RLTUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTUploader.h; sourceTree = "<group>"; };
+		A42AC8F819BB07EDCD163C28 /* RLTSessionTrackerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTSessionTrackerState.h; sourceTree = "<group>"; };
+		A42AC906E6CA452A6861D044 /* RLTUserPropertyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTUserPropertyValue.h; sourceTree = "<group>"; };
+		A42AC924CEB3A2727C6FC107 /* RLTSessionTrackerBackgroundState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTSessionTrackerBackgroundState.h; sourceTree = "<group>"; };
+		A42AC9739ED243D8326A9240 /* RLTSessionTrackerState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTSessionTrackerState.m; sourceTree = "<group>"; };
+		A42AC98555C8015379C91D33 /* RLTReportsStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTReportsStorage.m; sourceTree = "<group>"; };
+		A42AC9EBEB80B0D232D08209 /* RLTDevicePropertySupplier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTDevicePropertySupplier.m; sourceTree = "<group>"; };
+		A42ACA41E85A422E4EFE9012 /* RLTFormats+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLTFormats+Test.h"; sourceTree = "<group>"; };
+		A42ACA4B00EAF7AAD7125411 /* RLTDevicePropertySupplier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTDevicePropertySupplier.h; sourceTree = "<group>"; };
+		A42ACA6B4D858C5E1E4A0654 /* RLT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLT.h; sourceTree = "<group>"; };
+		A42ACA80D65A789FEA86FEFB /* RLTSessionTrackerSessionForegroundState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTSessionTrackerSessionForegroundState.m; sourceTree = "<group>"; };
+		A42ACA9D0A3ED25642677F9D /* RLTClientImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTClientImpl.h; sourceTree = "<group>"; };
+		A42ACACA85A971A15A20A3FA /* RLTDevicePropertyFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTDevicePropertyFactory.m; sourceTree = "<group>"; };
+		A42ACAEC6CA4479F16D3C4A2 /* RLTDevicePropertyCacheSupplier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTDevicePropertyCacheSupplier.h; sourceTree = "<group>"; };
+		A42ACB092A6258266EE31B7F /* RLTFormats+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLTFormats+Test.m"; sourceTree = "<group>"; };
+		A42ACB1992D1B51B544E605E /* RLTSessionTrackerListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTSessionTrackerListener.m; sourceTree = "<group>"; };
+		A42ACB3CE94CADFC96854531 /* NSString+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Test.m"; sourceTree = "<group>"; };
+		A42ACB490D17A67CE270F03B /* RLTEventProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTEventProperties.h; sourceTree = "<group>"; };
+		A42ACB664DF57199F6D05A16 /* RLTConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTConfiguration.h; sourceTree = "<group>"; };
+		A42ACC0D8764363437694E1C /* RLTConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTConfiguration.m; sourceTree = "<group>"; };
+		A42ACCDF73CBDE5CC6E8D05B /* RLTSessionTrackerSessionBackgroundState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTSessionTrackerSessionBackgroundState.h; sourceTree = "<group>"; };
+		A42ACD0FE8C9BBED800533E8 /* rlt_deflate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rlt_deflate.m; sourceTree = "<group>"; };
+		A42ACD2405971FEDC7087BEF /* RLTBaseProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTBaseProperties.h; sourceTree = "<group>"; };
+		A42ACD25DB854710982761F0 /* rlt_eventProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rlt_eventProperties.m; sourceTree = "<group>"; };
+		A42ACD2BB2089F3D4B6A742C /* rlt_reportsStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rlt_reportsStorage.m; sourceTree = "<group>"; };
+		A42ACD4BF4D5B32158537A2F /* RLTDeflate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTDeflate.m; sourceTree = "<group>"; };
+		A42ACDBC99F08F396329E30E /* RLTLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTLogger.h; sourceTree = "<group>"; };
+		A42ACDC5CE42094614F7E23E /* RLTSessionTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTSessionTracker.m; sourceTree = "<group>"; };
+		A42ACDF2104FDDAC27C38981 /* RLTUserProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTUserProperties.m; sourceTree = "<group>"; };
+		A42ACE4D876375F12615B10E /* RLTReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTReport.m; sourceTree = "<group>"; };
+		A42ACEA37E42ABE825D71AB1 /* RLTSessionTrackerBackgroundState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTSessionTrackerBackgroundState.m; sourceTree = "<group>"; };
+		A42ACEA50C2F7B1B141EDBFF /* RLTDevicePropertyCacheSupplier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTDevicePropertyCacheSupplier.m; sourceTree = "<group>"; };
+		A42ACED7A0D0BC2DABCEB73E /* RLTSessionTrackerSessionBackgroundState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTSessionTrackerSessionBackgroundState.m; sourceTree = "<group>"; };
+		A42ACF614EF23EFAA7BF92F7 /* RLTSQLiteUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTSQLiteUtils.m; sourceTree = "<group>"; };
+		A42ACF64764CE98177D6BDA3 /* RLTInitConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTInitConfig.h; sourceTree = "<group>"; };
+		A42ACF71DB8B7A54ADA507C7 /* RLTClientWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTClientWrapper.m; sourceTree = "<group>"; };
+		A42ACF739234D73640E1968E /* rlt_configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rlt_configuration.m; sourceTree = "<group>"; };
+		A42ACF9C085308C0D8EC9497 /* RLTDevicePropertyFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTDevicePropertyFactory.h; sourceTree = "<group>"; };
+		A42ACFC7CD6C11906F192F04 /* RLTIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTIO.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66B95E3023FADE750067BEF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66B95E3923FADE750067BEF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66B95E3D23FADE750067BEF5 /* RLT_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66B95E2923FADE750067BEF5 = {
+			isa = PBXGroup;
+			children = (
+				66B95E3523FADE750067BEF5 /* RLT-iOS */,
+				66B95E4023FADE750067BEF5 /* RLT-iOSTests */,
+				66B95E3423FADE750067BEF5 /* Products */,
+				A42AC33304E1939D18876EB9 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		66B95E3423FADE750067BEF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66B95E3323FADE750067BEF5 /* RLT_iOS.framework */,
+				66B95E3C23FADE750067BEF5 /* RLT-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66B95E3523FADE750067BEF5 /* RLT-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A42AC36E009B0EAFA6B9407C /* RLT-iOS */,
+				66B95E3623FADE750067BEF5 /* RLT_iOS.h */,
+				66B95E3723FADE750067BEF5 /* Info.plist */,
+			);
+			path = "RLT-iOS";
+			sourceTree = "<group>";
+		};
+		66B95E4023FADE750067BEF5 /* RLT-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				66B95E4323FADE760067BEF5 /* Info.plist */,
+				A42AC56EA57537D6B91C64C4 /* NSString+Test.h */,
+				A42ACB3CE94CADFC96854531 /* NSString+Test.m */,
+				A42AC142D77F26E4472037EC /* rlt_client.m */,
+				A42ACF739234D73640E1968E /* rlt_configuration.m */,
+				A42ACD0FE8C9BBED800533E8 /* rlt_deflate.m */,
+				A42AC71D76513E875D5BC67E /* rlt_devicePropertyConfig.m */,
+				A42ACD25DB854710982761F0 /* rlt_eventProperties.m */,
+				A42AC4FE653289C2ACF7FDB7 /* rlt_formats.m */,
+				A42AC48DBAF0ED37A925493D /* rlt_identifyStorage.m */,
+				A42ACD2BB2089F3D4B6A742C /* rlt_reportsStorage.m */,
+				A42AC2A70C94D8038F77ABA6 /* rlt_test_formats.m */,
+				A42AC54AF4FF22CEF3478257 /* rlt_userProperties.m */,
+				A42AC282E0A0FC060185AA4A /* RLTClientImpl+Tests.h */,
+				A42AC3166620E3928B41DED0 /* RLTClientImpl+Tests.m */,
+				A42AC0B1A29BDC5AB756B154 /* RLTEventProperties+Test.h */,
+				A42AC0F76206D9F953E56509 /* RLTEventProperties+Test.m */,
+				A42ACA41E85A422E4EFE9012 /* RLTFormats+Test.h */,
+				A42ACB092A6258266EE31B7F /* RLTFormats+Test.m */,
+				A42AC4A2D14D8D1A8AF5B214 /* RLTReportsStorage+Test.h */,
+				A42AC671A8AB12F11D87E786 /* RLTReportsStorage+Test.m */,
+			);
+			path = "RLT-iOSTests";
+			sourceTree = "<group>";
+		};
+		A42AC2C1D29CD56807322FAC /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				A42AC07BC3FBC79CD346C324 /* RLTReport.h */,
+				A42ACE4D876375F12615B10E /* RLTReport.m */,
+				A42AC8A7EB19021E8382DA66 /* RLTSQLiteUtils.h */,
+				A42ACF614EF23EFAA7BF92F7 /* RLTSQLiteUtils.m */,
+				A42AC395F1160C4CCE3B9BEC /* RLTReportsStorage.h */,
+				A42AC98555C8015379C91D33 /* RLTReportsStorage.m */,
+				A42AC5EE3D1B9B85582D5E5A /* RLTIdentifyStorage.h */,
+				A42AC0DBBB88D66166123943 /* RLTIdentifyStorage.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		A42AC32F69C07A6785681471 /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				A42ACD246ABA1D4351576448 /* DeviceProperty */,
+				A42ACD2405971FEDC7087BEF /* RLTBaseProperties.h */,
+				A42AC783F95BF5E04F7E5307 /* RLTBaseProperties.m */,
+				A42AC097014DC1E43C55C95E /* RLTUserProperties.h */,
+				A42ACDF2104FDDAC27C38981 /* RLTUserProperties.m */,
+				A42ACB490D17A67CE270F03B /* RLTEventProperties.h */,
+				A42AC477DC7A09C78D4EE797 /* RLTEventProperties.m */,
+				A42AC906E6CA452A6861D044 /* RLTUserPropertyValue.h */,
+				A42AC027CF5237B1996CC4B6 /* RLTUserPropertyValue.m */,
+			);
+			path = Properties;
+			sourceTree = "<group>";
+		};
+		A42AC36E009B0EAFA6B9407C /* RLT-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A42ACE8637A7DF0BA7CA1D10 /* Configuration */,
+				A42AC4F6F1AF164B7CF3EC6A /* Logger */,
+				A42ACCB1E0C85C260B182188 /* Network */,
+				A42AC32F69C07A6785681471 /* Properties */,
+				A42ACA60AB3C17C1340DBCA7 /* SessionTracker */,
+				A42AC2C1D29CD56807322FAC /* Storage */,
+				A42AC76A9D11FF6123D08094 /* Utils */,
+				A42ACA6B4D858C5E1E4A0654 /* RLT.h */,
+				A42AC84E9E3159F205B23139 /* RLT.m */,
+				A42AC4F56A923C390FEDD9BB /* RLTClient.h */,
+				A42ACA9D0A3ED25642677F9D /* RLTClientImpl.h */,
+				A42AC4223B558AA128992B07 /* RLTClientImpl.m */,
+				A42AC628BEFFD207EFDF87DE /* RLTClientWrapper.h */,
+				A42ACF71DB8B7A54ADA507C7 /* RLTClientWrapper.m */,
+				A42AC024E472AF74373C97A8 /* RLTFormats.h */,
+				A42AC53129C2AB27546CFAB3 /* RLTFormats.m */,
+			);
+			path = "RLT-iOS";
+			sourceTree = "<group>";
+		};
+		A42AC4F6F1AF164B7CF3EC6A /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				A42ACDBC99F08F396329E30E /* RLTLogger.h */,
+				A42AC82779FBF418483C8647 /* RLTLogger.m */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		A42AC76A9D11FF6123D08094 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A42ACFC7CD6C11906F192F04 /* RLTIO.h */,
+				A42AC0292EF2D19D6F74B571 /* RLTIO.m */,
+				A42AC09F20C7C3843F7DACFB /* RLTUtils.h */,
+				A42AC70B2FA6B56DEDF79D8A /* RLTUtils.m */,
+				A42AC0FC2D85C2CF16B83F93 /* RLTDeflate.h */,
+				A42ACD4BF4D5B32158537A2F /* RLTDeflate.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A42ACA60AB3C17C1340DBCA7 /* SessionTracker */ = {
+			isa = PBXGroup;
+			children = (
+				A42AC72CE93CE9B8A361592C /* RLTSessionTracker.h */,
+				A42ACDC5CE42094614F7E23E /* RLTSessionTracker.m */,
+				A42AC8F819BB07EDCD163C28 /* RLTSessionTrackerState.h */,
+				A42AC9739ED243D8326A9240 /* RLTSessionTrackerState.m */,
+				A42AC19CAD5A4EE24B03F6DB /* RLTSessionTrackerListener.h */,
+				A42ACB1992D1B51B544E605E /* RLTSessionTrackerListener.m */,
+				A42AC924CEB3A2727C6FC107 /* RLTSessionTrackerBackgroundState.h */,
+				A42ACEA37E42ABE825D71AB1 /* RLTSessionTrackerBackgroundState.m */,
+				A42ACCDF73CBDE5CC6E8D05B /* RLTSessionTrackerSessionBackgroundState.h */,
+				A42ACED7A0D0BC2DABCEB73E /* RLTSessionTrackerSessionBackgroundState.m */,
+				A42AC585077872CA01C66078 /* RLTSessionTrackerSessionForegroundState.h */,
+				A42ACA80D65A789FEA86FEFB /* RLTSessionTrackerSessionForegroundState.m */,
+			);
+			path = SessionTracker;
+			sourceTree = "<group>";
+		};
+		A42ACCB1E0C85C260B182188 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A42AC8D467F5CF8844BD63A6 /* RLTUploader.h */,
+				A42AC6AE50D480D33FC17F82 /* RLTUploader.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A42ACD246ABA1D4351576448 /* DeviceProperty */ = {
+			isa = PBXGroup;
+			children = (
+				A42ACF9C085308C0D8EC9497 /* RLTDevicePropertyFactory.h */,
+				A42ACACA85A971A15A20A3FA /* RLTDevicePropertyFactory.m */,
+				A42ACA4B00EAF7AAD7125411 /* RLTDevicePropertySupplier.h */,
+				A42AC9EBEB80B0D232D08209 /* RLTDevicePropertySupplier.m */,
+				A42ACAEC6CA4479F16D3C4A2 /* RLTDevicePropertyCacheSupplier.h */,
+				A42ACEA50C2F7B1B141EDBFF /* RLTDevicePropertyCacheSupplier.m */,
+			);
+			path = DeviceProperty;
+			sourceTree = "<group>";
+		};
+		A42ACE8637A7DF0BA7CA1D10 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A42ACF64764CE98177D6BDA3 /* RLTInitConfig.h */,
+				A42AC686E4FC5AE8EE201052 /* RLTInitConfig.m */,
+				A42ACB664DF57199F6D05A16 /* RLTConfiguration.h */,
+				A42ACC0D8764363437694E1C /* RLTConfiguration.m */,
+				A42AC53A8579615C152DC474 /* RLTDevicePropertyConfig.h */,
+				A42AC68177D4E92F75070680 /* RLTDevicePropertyConfig.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		66B95E2E23FADE750067BEF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66B95E4423FADE760067BEF5 /* RLT_iOS.h in Headers */,
+				A42ACDE506909C8585D352E7 /* RLTInitConfig.h in Headers */,
+				A42ACE1BC775E3ADDB7BA684 /* RLTDevicePropertyConfig.h in Headers */,
+				A42ACEC695CED4332649E047 /* RLTDevicePropertyCacheSupplier.h in Headers */,
+				A42AC11581FCA05F4FE28EF3 /* RLTLogger.h in Headers */,
+				A42AC5AE63F3B33993E682DD /* RLT.h in Headers */,
+				A42AC05D3A67C564F740A0DA /* RLTClient.h in Headers */,
+				A42AC6C24FC2E2F36F383238 /* RLTUserProperties.h in Headers */,
+				A42ACE6F8C5EED2F6B55FA14 /* RLTEventProperties.h in Headers */,
+				A42AC645CF65A9AE229AC2F1 /* RLTBaseProperties.h in Headers */,
+				A42ACC2A1FA21C277EF916F3 /* RLTConfiguration.h in Headers */,
+				A42AC628461AF94C9F1FEB21 /* RLTUploader.h in Headers */,
+				A42AC0F2CB96B83151B147DD /* RLTDevicePropertyFactory.h in Headers */,
+				A42AC6BDACB5E5EC62BD775E /* RLTDevicePropertySupplier.h in Headers */,
+				A42AC9E8405A59892771204D /* RLTUserPropertyValue.h in Headers */,
+				A42AC784528A865BBB39FFE2 /* RLTSessionTracker.h in Headers */,
+				A42AC822E3CA99EFDB67E2CF /* RLTSessionTrackerState.h in Headers */,
+				A42ACA8A632ACEE4F6A51FE5 /* RLTSessionTrackerListener.h in Headers */,
+				A42AC3479CBCBCE0CE8C3FFA /* RLTSessionTrackerBackgroundState.h in Headers */,
+				A42AC240CF81D9BDBA7201A3 /* RLTSessionTrackerSessionBackgroundState.h in Headers */,
+				A42ACB4180BB145E9E34681F /* RLTSessionTrackerSessionForegroundState.h in Headers */,
+				A42AC5C44889B4C7E7AC99BA /* RLTReport.h in Headers */,
+				A42ACBD25A00307D308C9055 /* RLTSQLiteUtils.h in Headers */,
+				A42ACE14EC0690212D33B9CE /* RLTReportsStorage.h in Headers */,
+				A42ACA73774E25877B8CF47F /* RLTIdentifyStorage.h in Headers */,
+				A42AC02196F6283B0697B203 /* RLTIO.h in Headers */,
+				A42ACB7A84C2DF0DE3B34D46 /* RLTUtils.h in Headers */,
+				A42AC9803BE1B4CD41B8AA6C /* RLTDeflate.h in Headers */,
+				A42AC862164BA941D2DCFDF4 /* RLTClientImpl.h in Headers */,
+				A42AC0BD839E9A016D90AE04 /* RLTClientWrapper.h in Headers */,
+				A42AC5A4D7B854FD88F2CC78 /* RLTFormats.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		66B95E3223FADE750067BEF5 /* RLT-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66B95E4723FADE760067BEF5 /* Build configuration list for PBXNativeTarget "RLT-iOS" */;
+			buildPhases = (
+				66B95E2E23FADE750067BEF5 /* Headers */,
+				66B95E2F23FADE750067BEF5 /* Sources */,
+				66B95E3023FADE750067BEF5 /* Frameworks */,
+				66B95E3123FADE750067BEF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RLT-iOS";
+			productName = "RLT-iOS";
+			productReference = 66B95E3323FADE750067BEF5 /* RLT_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		66B95E3B23FADE750067BEF5 /* RLT-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66B95E4A23FADE760067BEF5 /* Build configuration list for PBXNativeTarget "RLT-iOSTests" */;
+			buildPhases = (
+				66B95E3823FADE750067BEF5 /* Sources */,
+				66B95E3923FADE750067BEF5 /* Frameworks */,
+				66B95E3A23FADE750067BEF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66B95E3F23FADE750067BEF5 /* PBXTargetDependency */,
+			);
+			name = "RLT-iOSTests";
+			productName = "RLT-iOSTests";
+			productReference = 66B95E3C23FADE750067BEF5 /* RLT-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66B95E2A23FADE750067BEF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Rubylight;
+				TargetAttributes = {
+					66B95E3223FADE750067BEF5 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					66B95E3B23FADE750067BEF5 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 66B95E2D23FADE750067BEF5 /* Build configuration list for PBXProject "RLT-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66B95E2923FADE750067BEF5;
+			productRefGroup = 66B95E3423FADE750067BEF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66B95E3223FADE750067BEF5 /* RLT-iOS */,
+				66B95E3B23FADE750067BEF5 /* RLT-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66B95E3123FADE750067BEF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42ACEAEF8099E3C011988CA /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66B95E3A23FADE750067BEF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66B95E2F23FADE750067BEF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42ACF2BA3301A6FDC3B0F46 /* RLTInitConfig.m in Sources */,
+				A42ACA0D356FEE18522CABA6 /* RLTConfiguration.m in Sources */,
+				A42AC455D9CE303945702DCB /* RLTDevicePropertyConfig.m in Sources */,
+				A42AC2C74FD16EEBB1E85CF6 /* RLTLogger.m in Sources */,
+				A42ACA1DF1234E62690492EF /* RLTUploader.m in Sources */,
+				A42AC60CC0EAD26335653CC4 /* RLTDevicePropertyFactory.m in Sources */,
+				A42ACF76AB414CBCA514BDB3 /* RLTDevicePropertySupplier.m in Sources */,
+				A42AC061EC1ECA2A67B6BD16 /* RLTDevicePropertyCacheSupplier.m in Sources */,
+				A42AC96F8C7408437F714B94 /* RLTBaseProperties.m in Sources */,
+				A42ACF7118734910E15657AD /* RLTUserProperties.m in Sources */,
+				A42ACA756E57B14B36386F15 /* RLTEventProperties.m in Sources */,
+				A42AC529F3C8CB0106750D05 /* RLTUserPropertyValue.m in Sources */,
+				A42ACBAC7ED7CB2AD5961F68 /* RLTSessionTracker.m in Sources */,
+				A42AC526C1F590C4003D1A37 /* RLTSessionTrackerState.m in Sources */,
+				A42ACAD8842D8FD49B18DCEF /* RLTSessionTrackerListener.m in Sources */,
+				A42ACBABF5596D1FD4F78F2D /* RLTSessionTrackerBackgroundState.m in Sources */,
+				A42AC4433486D39B28D2AF4C /* RLTSessionTrackerSessionBackgroundState.m in Sources */,
+				A42AC7D3F652EDAB768CA097 /* RLTSessionTrackerSessionForegroundState.m in Sources */,
+				A42ACF0B16BBE059132D70CC /* RLTReport.m in Sources */,
+				A42AC2CD244168EECC9CC296 /* RLTSQLiteUtils.m in Sources */,
+				A42ACD1EC0132DB4F18DC417 /* RLTReportsStorage.m in Sources */,
+				A42ACC2193A4A9D2E00E5DBC /* RLTIdentifyStorage.m in Sources */,
+				A42ACBF5592A3901721EC6EB /* RLTIO.m in Sources */,
+				A42AC2DEA69A4FF080F95A6D /* RLTUtils.m in Sources */,
+				A42AC56A0E1433360DC12B44 /* RLTDeflate.m in Sources */,
+				A42AC2694BBB73CBB7F13B3B /* RLT.m in Sources */,
+				A42AC770D8D83BF740FAA3E7 /* RLTClientImpl.m in Sources */,
+				A42AC66802EFE1A822A40E54 /* RLTClientWrapper.m in Sources */,
+				A42ACFF9D349CDD0D8B0F51F /* RLTFormats.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66B95E3823FADE750067BEF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42AC2F1E2ABA646AB8BA569 /* NSString+Test.m in Sources */,
+				A42AC78DC889066AF0B055B7 /* rlt_client.m in Sources */,
+				A42AC641E62EADC5CAF5F1B4 /* rlt_configuration.m in Sources */,
+				A42AC1F388903078C0B71894 /* rlt_deflate.m in Sources */,
+				A42AC8BABC8343C4F5B629A6 /* rlt_devicePropertyConfig.m in Sources */,
+				A42AC3492CAE0E92850F7736 /* rlt_eventProperties.m in Sources */,
+				A42AC08167E1C63B4CA1EFF3 /* rlt_formats.m in Sources */,
+				A42ACA7B02FDB735674CA244 /* rlt_identifyStorage.m in Sources */,
+				A42AC998557A86CC26C69170 /* rlt_reportsStorage.m in Sources */,
+				A42AC6898A7F90D707812FBE /* rlt_test_formats.m in Sources */,
+				A42AC089B0EF3653772970CC /* rlt_userProperties.m in Sources */,
+				A42ACE4891D672A2BD300BA7 /* RLTClientImpl+Tests.m in Sources */,
+				A42AC7C4D656309D7EA8A19C /* RLTEventProperties+Test.m in Sources */,
+				A42ACC6313ECC972E40C10C7 /* RLTFormats+Test.m in Sources */,
+				A42AC55D7DCB60F887AB3F53 /* RLTReportsStorage+Test.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66B95E3F23FADE750067BEF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66B95E3223FADE750067BEF5 /* RLT-iOS */;
+			targetProxy = 66B95E3E23FADE750067BEF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		66B95E4523FADE760067BEF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		66B95E4623FADE760067BEF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		66B95E4823FADE760067BEF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L55G758PXG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "RLT-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rubylight.RLT-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66B95E4923FADE760067BEF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L55G758PXG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "RLT-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rubylight.RLT-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		66B95E4B23FADE760067BEF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L55G758PXG;
+				INFOPLIST_FILE = "RLT-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rubylight.RLT-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66B95E4C23FADE760067BEF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L55G758PXG;
+				INFOPLIST_FILE = "RLT-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rubylight.RLT-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66B95E2D23FADE750067BEF5 /* Build configuration list for PBXProject "RLT-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66B95E4523FADE760067BEF5 /* Debug */,
+				66B95E4623FADE760067BEF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66B95E4723FADE760067BEF5 /* Build configuration list for PBXNativeTarget "RLT-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66B95E4823FADE760067BEF5 /* Debug */,
+				66B95E4923FADE760067BEF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66B95E4A23FADE760067BEF5 /* Build configuration list for PBXNativeTarget "RLT-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66B95E4B23FADE760067BEF5 /* Debug */,
+				66B95E4C23FADE760067BEF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66B95E2A23FADE750067BEF5 /* Project object */;
+}
