@@ -13,6 +13,7 @@
 #import "RLTUtils.h"
 #import "RLTFormats.h"
 #import "RLTSessionTracker.h"
+#import "RLTSessionTrackerDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -33,6 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) int sequence;
 
 @property(nonatomic) RLTSessionTracker *sessionTracker;
+@property(nonatomic, weak) id<RLTSessionTrackerDelegate>_Nullable sessionTrackerDelegate;
 @end
 
 @implementation RLTClientImpl
@@ -54,8 +56,12 @@ NS_ASSUME_NONNULL_BEGIN
 
         RLTLoggerLog(@"RLT initialized: deviceId '%@', userId '%@', sequence %i, configuration: %@", self.deviceId, self.userId, self.sequence, self.configuration);
 
+        self.sessionTrackerDelegate = initConfig.sessionTrackerDelegate;
         if (initConfig.enableStartAppEvent) {
             [self logEvent:RLT__DEFAULT_EVENTS__START_APP];
+            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                [self.sessionTrackerDelegate onStartAppEvent];
+            }];
         }
         if (initConfig.enableSessionTracking) {
             __weak __typeof(self) weakSelf = self;
@@ -63,6 +69,9 @@ NS_ASSUME_NONNULL_BEGIN
                 __strong __typeof(self) self = weakSelf;
                 [self logEvent:RLT__DEFAULT_EVENTS__START_SESSION];
                 [self flush];
+                [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                    [self.sessionTrackerDelegate onStartSessionEvent];
+                }];
             }                                                                                                                                          sessionEndedCallback:^(NSTimeInterval duration) {
                 __strong __typeof(self) self = weakSelf;
                 [self flush];

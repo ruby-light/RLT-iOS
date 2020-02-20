@@ -26,6 +26,7 @@
 		A42AC2F1E2ABA646AB8BA569 /* NSString+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACB3CE94CADFC96854531 /* NSString+Test.m */; };
 		A42AC3479CBCBCE0CE8C3FFA /* RLTSessionTrackerBackgroundState.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC924CEB3A2727C6FC107 /* RLTSessionTrackerBackgroundState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A42AC3492CAE0E92850F7736 /* rlt_eventProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACD25DB854710982761F0 /* rlt_eventProperties.m */; };
+		A42AC34CC5027DDAFBF2DF55 /* RLTSessionTrackerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A42AC8DCAD4DD6E5C36AEEDF /* RLTSessionTrackerDelegate.h */; };
 		A42AC4433486D39B28D2AF4C /* RLTSessionTrackerSessionBackgroundState.m in Sources */ = {isa = PBXBuildFile; fileRef = A42ACED7A0D0BC2DABCEB73E /* RLTSessionTrackerSessionBackgroundState.m */; };
 		A42AC455D9CE303945702DCB /* RLTDevicePropertyConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC68177D4E92F75070680 /* RLTDevicePropertyConfig.m */; };
 		A42AC526C1F590C4003D1A37 /* RLTSessionTrackerState.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AC9739ED243D8326A9240 /* RLTSessionTrackerState.m */; };
@@ -144,6 +145,7 @@
 		A42AC84E9E3159F205B23139 /* RLT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLT.m; sourceTree = "<group>"; };
 		A42AC8A7EB19021E8382DA66 /* RLTSQLiteUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTSQLiteUtils.h; sourceTree = "<group>"; };
 		A42AC8D467F5CF8844BD63A6 /* RLTUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTUploader.h; sourceTree = "<group>"; };
+		A42AC8DCAD4DD6E5C36AEEDF /* RLTSessionTrackerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTSessionTrackerDelegate.h; sourceTree = "<group>"; };
 		A42AC8F819BB07EDCD163C28 /* RLTSessionTrackerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTSessionTrackerState.h; sourceTree = "<group>"; };
 		A42AC906E6CA452A6861D044 /* RLTUserPropertyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTUserPropertyValue.h; sourceTree = "<group>"; };
 		A42AC924CEB3A2727C6FC107 /* RLTSessionTrackerBackgroundState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTSessionTrackerBackgroundState.h; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 				A42ACED7A0D0BC2DABCEB73E /* RLTSessionTrackerSessionBackgroundState.m */,
 				A42AC585077872CA01C66078 /* RLTSessionTrackerSessionForegroundState.h */,
 				A42ACA80D65A789FEA86FEFB /* RLTSessionTrackerSessionForegroundState.m */,
+				A42AC8DCAD4DD6E5C36AEEDF /* RLTSessionTrackerDelegate.h */,
 			);
 			path = SessionTracker;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				A42AC862164BA941D2DCFDF4 /* RLTClientImpl.h in Headers */,
 				A42AC0BD839E9A016D90AE04 /* RLTClientWrapper.h in Headers */,
 				A42AC5A4D7B854FD88F2CC78 /* RLTFormats.h in Headers */,
+				A42AC34CC5027DDAFBF2DF55 /* RLTSessionTrackerDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,6 +731,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rubylight.RLT-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -751,6 +756,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rubylight.RLT-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

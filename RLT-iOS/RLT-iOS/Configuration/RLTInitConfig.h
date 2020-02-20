@@ -7,6 +7,7 @@
 #import "RLTDevicePropertyConfig.h"
 
 @protocol RLTLoggerProtocol;
+@protocol RLTSessionTrackerDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -30,6 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) id<RLTLoggerProtocol>_Nullable logger;
 
 @property(nonatomic) BOOL dryRunEnabled;
+
+@property(nonatomic, weak) id<RLTSessionTrackerDelegate>_Nullable sessionTrackerDelegate;
 
 @end
 
