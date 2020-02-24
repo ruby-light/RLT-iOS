@@ -68,7 +68,13 @@ NSString *const RLTIdentifyStorage_UserId = @"userId";
     BOOL success = NO;
     if (@available(iOS 11.0, *)) {
         NSError *archiveError;
-        NSData *archivedData = [NSKeyedArchiver archivedDataWithRootObject:dictionary requiringSecureCoding:YES error:&archiveError];
+        NSData *archivedData;
+        @try {
+            archivedData = [NSKeyedArchiver archivedDataWithRootObject:dictionary requiringSecureCoding:YES error:&archiveError];
+        }
+        @catch (NSException *exception) {
+            RLTLoggerException(exception, @"Archive failed with exception. dictionary : %@", dictionary)
+        }
         if (!archivedData || archiveError) {
             RLTLoggerError(archiveError, @"Archive failed. Data length is %li bytes.", (long) archivedData.length);
             return;
@@ -81,7 +87,12 @@ NSString *const RLTIdentifyStorage_UserId = @"userId";
     } else {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        success = [NSKeyedArchiver archiveRootObject:dictionary toFile:path];
+        @try {
+            success = [NSKeyedArchiver archiveRootObject:dictionary toFile:path];
+        }
+        @catch (NSException *exception) {
+            RLTLoggerException(exception, @"Archive failed with exception. dictionary : %@", dictionary)
+        }
 #pragma clang diagnostic pop
     }
     if (!success) {

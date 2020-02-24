@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                   = "RLT-iOS"
-  s.version                = "1.0.2"
+  s.version                = "1.0.3"
   s.summary                = "Native iOS SDK."
   s.homepage               = "https://github.com/ruby-light/RLT-iOS"
   s.author                 = "Alexey Chirkov"
