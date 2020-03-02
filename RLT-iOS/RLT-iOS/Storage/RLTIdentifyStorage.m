@@ -73,7 +73,7 @@ NSString *const RLTIdentifyStorage_UserId = @"userId";
             archivedData = [NSKeyedArchiver archivedDataWithRootObject:dictionary requiringSecureCoding:YES error:&archiveError];
         }
         @catch (NSException *exception) {
-            RLTLoggerException(exception, @"Archive failed with exception. dictionary : %@", dictionary)
+            RLTLoggerException(exception, @"Archive failed with exception. dictionary : %@", dictionary);
         }
         if (!archivedData || archiveError) {
             RLTLoggerError(archiveError, @"Archive failed. Data length is %li bytes.", (long) archivedData.length);
@@ -91,7 +91,7 @@ NSString *const RLTIdentifyStorage_UserId = @"userId";
             success = [NSKeyedArchiver archiveRootObject:dictionary toFile:path];
         }
         @catch (NSException *exception) {
-            RLTLoggerException(exception, @"Archive failed with exception. dictionary : %@", dictionary)
+            RLTLoggerException(exception, @"Archive failed with exception. dictionary : %@", dictionary);
         }
 #pragma clang diagnostic pop
     }
@@ -126,6 +126,7 @@ NSString *const RLTIdentifyStorage_UserId = @"userId";
     @catch (NSException *exception) {
         RLTLoggerException(exception, @"Unarchive failed. Initial data length: %li bytes.", (long) data.length);
     }
+    return nil;
 }
 
 @end
