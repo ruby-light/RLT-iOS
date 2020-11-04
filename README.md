@@ -36,7 +36,7 @@ initConfig.enableSessionTracking = YES;
 
 [RLT logUserProperties:[[RLTUserProperties instance] set:@"male" forKey:@"gender"]];
 [RLT setUserId:@"123123-341231"];
-[RLT logEvent:@"StartConversation" eventProperties:[[RLTEventProperties instance] set:@"private" forKey:@"type"]];
+[RLT logEvent:@"StartConversation" eventProperties:[[[RLTEventProperties instance] set:@"private" forKey:@"type"] set:@"foo" forKey:@"bar"]];
 [RLT logEvent:@"EndConversation"];
 [RLT flush];
 ```
@@ -53,7 +53,7 @@ self.rlt = RLT.initialize(withApiKey: "<API_KEY>", initConfig: initConfig)
 
 RLT.logUserProperties(RLTUserProperties.instance().set("male", forKey: "gender"))
 RLT.setUserId("123123-341231")
-RLT.logEvent("StartConversation", eventProperties: RLTEventProperties.instance().set("private", forKey: "type"))
+RLT.logEvent("StartConversation", eventProperties: RLTEventProperties.instance().set("private", forKey: "type").set("foo", forKey: "bar"))
 RLT.logEvent("EndConversation")
 RLT.flush()
 ```
